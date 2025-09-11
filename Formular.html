@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container{
+            max-width: 600px ;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius:8px ;
+            box-shadow: 0 0 10px rgb(39, 36, 36);
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 0%;
+        }
+        input[type="submit"]{
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: greenyellow;
+        }
+        
+
+    </style>
+
+
+    }
+
+
+
+</head>
+<body>
+    <div class="container"> 
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <form id="formulario" action="#" method="post">
+            <label for="nombre">nombre:</label>
+            <input type="text" id=" nombre" name= "nombre" required>
+             <label for="email">correo electronico:</label>
+            <input type="email" id="email" name="emial" required>
+             <label for="fecha_nacimiento">fecha_nacimiento:</label>
+            <input type="date" id="feche_nacimiento" name="fecha_nacimiento" required> 
+            <label for="telefono">movil:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{1}" required>
+            <label for="mensaje">mensaje:</label>
+            <textarea id= "mensaje" name="mensaje" rows="4" required></textarea>
+            <label for="pais">pais</label>
+            <select id="pais" name="pais" required>
+                <option value=" "disable selected>selecciona tu pais </option>
+                <option value="es"> España</option>
+                <option value="es"> E</option>
+                <option value="es"> España</option>
+                <option value="es"> España</option>
+            </select>
+        </form>
+    </div>
+</body>
+</html>
